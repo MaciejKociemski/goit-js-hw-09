@@ -24,15 +24,21 @@ img {
 
   
   background-color: hsl(59, 72%, 76%);
-  box-shadow: 3px 3px hsl(79, 72%, 66%), -1em 0 .5em olive;
+  /* box-shadow: 3px 3px hsl(79, 72%, 66%), -1em 0 .5em olive; */
   border: 1px solid hsl(0, 0%, 0%);
   color: hsl(0, 0%, 0%);
-  padding: 2px;
-  border-radius: 9px;
+  padding: 5px;
+  border-radius: 5px;
   text-decoration: none;
   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;font-size: 14px;
   line-height: 3;
-  
 
+}
+
+.btn{
+  background-color: lightgray;
+  border: 1px solid gray;
+  padding: 5px;
+  width: 60px;
   
 }
