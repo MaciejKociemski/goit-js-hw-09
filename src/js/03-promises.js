@@ -5,6 +5,9 @@ form.addEventListener('submit', onSubmitForm);
 function onSubmitForm(e) {
   e.preventDefault();
   let { delay, step, amount } = e.currentTarget;
+   delay= Number(delay.value);
+   step= Number(step.value);
+   amount= Number(amount.value);
   
 }
 
@@ -17,5 +20,8 @@ function createPromise(position, delay) {
     // Fulfill
   } else {
     // Reject
-  }
+  }  
+
+
 }
+
