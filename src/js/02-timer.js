@@ -50,6 +50,7 @@ const options = {
             seconds.textContent = convertMs(deltaTime).seconds;
             
             startBtn.disabled = true;
+            
             flatpickrEl.input.setAttribute("disabled", "disabled")
             if (deltaTime < 1000) {
                 clearInterval(intervalId);
@@ -58,6 +59,8 @@ const options = {
                 minutes.textContent = '00';
                 seconds.textContent = '00';
                 startBtn.disabled = false;
+                startInput.disabled = true;
+                flatpickrEl.input.disabled = false;
             }
         }, 1000);
 }
