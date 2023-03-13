@@ -21,7 +21,7 @@ let dateElClock = null;
 
 startBtn.disabled = true;
 
-//from homework
+//from homework content
 const options = {
     enableTime: true,
     time_24hr: true,

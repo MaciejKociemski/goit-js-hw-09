@@ -3,6 +3,9 @@ import { Notify } from 'notiflix';
 const form = document.querySelector('.form')
 form.addEventListener('submit', onFormSubmit);
 
+
+//onFormSubmit - przypisuję funkcję do zdarzenia wysłania formularza, pętlą tworzę obietnice z zadanymi krokami (delay, step, amount z zdania) z funkcją createPromise
+
 function onFormSubmit (e){
   e.preventDefault();
 
@@ -17,7 +20,7 @@ for (let position =1; position <= amount; position+=1){
 .catch(onMakeOrderError)
 delay += step;}
 }
-
+// gdy obietnica będzie poprawnie wywołuje funkcję onMakeOrderSucces, gdy bedzie odrzucona onMakeOrderError
 
 const onMakeOrderSuccess =({ position, delay }) =>{
     Notify.success(`✅ Fulfilled promise ${position} in ${delay}ms`)
@@ -31,9 +34,11 @@ function createPromise(position, delay) {
   return new Promise((resolve, reject) => {
     setTimeout(() => { 
     if (shouldResolve) {
-      resolve({ position, delay });
+      resolve({ position, delay }
+      );
     } else {
-      reject({ position, delay });
+      reject({ position, delay }
+      );
     }
   }, delay);
   });
