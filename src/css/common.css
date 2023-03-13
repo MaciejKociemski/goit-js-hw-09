@@ -39,7 +39,8 @@ img {
   line-height: 3;
 
 }
-
+.imitationButton:hover{background-color: rgb(164, 186, 186);
+  border: 1px solid blue;}
 .btn{
   background-color: lightgray;
   border: 1px solid gray;
@@ -51,6 +52,10 @@ img {
   
 }
 
+.btn:hover{
+  background-color: rgb(164, 186, 186);
+  border: 1px solid blue;
+}
 .btnCreatePromises{
   background-color: lightgray;
   border: 1px solid gray;
@@ -60,8 +65,13 @@ img {
   font-weight: 700;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   ;cursor: pointer;
+
   
 }
+.btnCreatePromises:hover{
+  background-color: rgb(164, 186, 186);
+  border: 1px solid blue;}
+
 
 .value{font-size: 20px;
 font-weight: 900;}
