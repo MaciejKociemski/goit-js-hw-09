@@ -26,7 +26,7 @@ const onMakeOrderSuccess =({ position, delay }) =>{
     Notify.success(`✅ Fulfilled promise ${position} in ${delay}ms`)
   }
 const onMakeOrderError = ({ position, delay }) =>{
-    Notify.error(`❌ Rejected promise ${position} in ${delay}ms`)
+    Notify.failure(`❌ Rejected promise ${position} in ${delay}ms`)
   }
   
 function createPromise(position, delay) {
